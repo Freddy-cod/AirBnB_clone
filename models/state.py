@@ -1,10 +1,21 @@
 #!/usr/bin/python3
-"""Create State class, inhering from Basemodel"""
-
+"""
+Defines the User class.
+"""
 from models.base_model import BaseModel
 
 
-class State(BaseModel):
-    """Manages your objects(states)"""
+class User(BaseModel):
+    """Represent a User
 
-    name = ""
+    Attributes:
+        email (str): user email
+        password (str): user password
+        first_name (str): first name
+        last_name (str): last name
+
+    """
+    email = ""
+    password = ""
+    first_name = ""
+    last_name = ""
